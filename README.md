@@ -1,29 +1,32 @@
-# 👥 Coordenação Geral - Equipe Análise
+# 👥 Coordenação Geral - Equipe
 
-Olá, equipe! Este é o ponto central de coordenação para o **Trabalho 1 (Implementação Técnica)**. Aqui organizamos as tarefas de infraestrutura, banco de dados e backend para a nossa aplicação **UP Espaço**.
-
----
-
-## ⚙️ Como funciona a divisão de tarefas
-
-* **Divisão Inicial**: A divisão foi pensada para balancear as cargas de trabalho técnico entre a equipe de desenvolvimento e o PO.
-* **Flexibilidade e Trocas**: Esta distribuição representa a proposta de partida. **Caso queiram trocar de responsabilidade ou redefinir tarefas entre si, vocês têm total liberdade!** A única regra é comunicar previamente a equipe e o PO (Braga) para que possamos atualizar esta documentação e manter o versionamento do repositório em ordem.
-
----
-
-## 📈 Suas tarefas específicas
-
-Acesse o plano detalhado de cada membro do time nos links abaixo:
-
-* 💻 **[Plano de Atividades: Yan (Backend & Integração de API)](file:///c:/Users/Braga/Desktop/frontend_up/equipe_analise/README_YAN.md)**
-* 📊 **[Plano de Atividades: Kenedi (Banco de Dados & Observabilidade)](file:///c:/Users/Braga/Desktop/frontend_up/equipe_analise/README_KENEDI.md)**
-* 🚀 **Product Owner & Frontend Dev (Braga)**: Coordenação das sprints e desenvolvimento cliente.
-
----
-
-## 🎤 Preparação da Apresentação Final (Atenção Equipe!)
+Fala, galera! Este é o nosso espaço para organizar a parte técnica do nosso projeto da **UP Espaço**. 
 
 > [!IMPORTANT]
-> - A entrega final exige uma **apresentação de até 20 minutos** demonstrando o software funcionando.
-> - **Alinhamento pós-tarefas**: Assim que cada um concluir as suas respectivas atividades de desenvolvimento (Yan com a API funcionando e Kenedi com as tabelas Postgres e o Grafana prontos), **a equipe deve obrigatoriamente se reunir**.
-> - Nessa reunião, faremos a integração do frontend com o backend real no Docker e faremos uma simulação da apresentação ao vivo, validando a observabilidade (bônus de 1 ponto extra) para garantir que tudo ocorra perfeitamente na frente do professor.
+> **Foco do nosso projeto**: O nosso objetivo é **técnico**. Vamos construir um sistema funcional rodando do zero de forma real (sem mocks no final!). O Brayan (PO) já montou a base do frontend, agora precisamos implementar um servidor backend real, conectá-lo a um banco de dados PostgreSQL e configurar a observabilidade (Prometheus + Grafana) para monitorar tudo rodando.
+
+---
+
+## ⚙️ Como vai funcionar?
+
+* **Divisão Inicial**: Fiz uma divisão de tarefas para balancear o trampo de cada um. 
+* **Troca de responsabilidades**: Essa divisão é só o pontapé inicial. **Se vocês preferirem trocar de papel ou ajustar as tarefas entre si, está super liberado!** Só peço que avisem a equipe e a mim (Brayan) antes para eu manter a documentação atualizada no repositório.
+
+---
+
+## 📈 Nossas Tarefas
+
+Acessem os planos detalhados de cada um nos links abaixo:
+
+* 💻 **[Plano de Atividades: Yan (Backend & Integração de API)](README_YAN.md)**
+* 📊 **[Plano de Atividades: Kenedi (Banco de Dados & Observabilidade)](README_KENEDI.md)**
+* 🚀 **Brayan (PO & Frontend)**: Cuidar do frontend e ajudar na integração geral.
+
+---
+
+## 🎤 Reta Final: Reunião e Slide da Apresentação
+
+> [!IMPORTANT]
+> - A nossa entrega final precisa de uma **apresentação ao vivo de até 20 minutos** mostrando o software funcionando em tempo real.
+> - **Reunião de alinhamento**: Assim que cada um terminar sua parte (Yan com a API rodando e Kenedi com as tabelas Postgres e o Grafana configurados), **vamos nos reunir**.
+> - Nessa reunião, vamos rodar o projeto integrado no Docker, testar tudo junto, montar os **slides da apresentação** e ensaiar para garantir que a observabilidade (que garante nosso ponto extra) funcione redondo.
