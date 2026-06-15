@@ -22,7 +22,7 @@ Você deverá programar o servidor backend utilizando a tecnologia/linguagem aco
 Configurar o ORM (como Prisma, Sequelize, Mongoose) ou drivers SQL nativos no backend para se comunicar diretamente com o contêiner `db` (PostgreSQL) configurado no `docker-compose.yml`.
 
 ### 3. 📐 Modelagem de Entidades no Código
-Mapear e codificar as entidades e tabelas no backend correspondendo às interfaces do TypeScript definidas pelo frontend (consulte o arquivo [src/types.ts](file:///c:/Users/Braga/Desktop/frontend_up/src/types.ts)).
+Mapear e codificar as entidades e tabelas no backend correspondendo às interfaces do TypeScript definidas pelo frontend (consulte o arquivo [src/types.ts](src/types.ts)).
 
 ### 4. 🧪 Regras de Negócio e Validações
 Garantir que o backend trate corretamente as regras antes de salvar no banco de dados (ex: impedir o cadastro de posts sem título ou sem nota pedagógica, atualizar horários de check-in automaticamente ao dar presença no dia).
@@ -34,11 +34,11 @@ Configurar as permissões de CORS (Cross-Origin Resource Sharing) no backend par
 Criar e expor um endpoint público `/metrics` no backend utilizando bibliotecas padrões (ex. `prom-client` para Node.js ou `prometheus-client` para Python). O Prometheus utilizará esse endpoint para raspar métricas de performance (latência, CPU, chamadas por segundo) para desenharmos no Grafana.
 
 ### 🤝 7. Teste de Integração Ponta a Ponta
-Trabalhar junto com o PO (Braga) para trocar a variável de ambiente `VITE_API_URL` para o endereço da sua API e validar se a transição dos dados simulados locais para a sua API real está acontecendo de forma limpa e sem bugs na UI.
+Trabalhar junto com o PO (Brayan) para trocar a variável de ambiente `VITE_API_URL` para o endereço da sua API e validar se a transição dos dados simulados locais para a sua API real está acontecendo de forma limpa e sem bugs na UI.
 
 ---
 
 ## 🛠️ Como rodar o seu ambiente localmente
 1. O backend deve ler a variável de conexão `DATABASE_URL` (configurada no `docker-compose.yml`).
 2. Garanta que a sua porta mapeada no container seja a `8000`.
-3. Siga o fluxo detalhado no [README.md](file:///c:/Users/Braga/Desktop/frontend_up/README.md) principal para subir o banco de dados.
+3. Siga o fluxo detalhado no [README.md](README.md) principal para subir o banco de dados.
