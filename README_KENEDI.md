@@ -16,13 +16,13 @@ Modelar e criar as tabelas físicas no PostgreSQL correspondentes às entidades 
 - `calendar_events` (id, title, time, isImportant, icon, color, rsvpPrompt, isRSVPed)
 
 ### 2. ⚡ Script de Inicialização de Dados (Seeders)
-Criar e manter scripts de população inicial do banco com dados realistas (usando como base as informações originais do arquivo [src/data.ts](file:///c:/Users/Braga/Desktop/frontend_up/src/data.ts)), para que o projeto inicie com posts e timelines de demonstração.
+Criar e manter scripts de população inicial do banco com dados realistas (usando como base as informações originais do arquivo [src/data.ts](src/data.ts)), para que o projeto inicie com posts e timelines de demonstração.
 
 ### 3. 🐳 Gestão de Volumes e Persistência do Postgres
 Garantir que as tabelas e dados inseridos no PostgreSQL não sejam apagados ao derrubar os contêineres Docker. Isso será feito mantendo e ajustando o volume `postgres_data` declarado em nosso `docker-compose.yml`.
 
 ### 🎛️ 4. Configuração do Coletor Prometheus
-Configurar e gerenciar o arquivo [prometheus.yml](file:///c:/Users/Braga/Desktop/frontend_up/prometheus.yml) para que o Prometheus colete dados de telemetria da máquina do backend e do banco de dados a cada 15 segundos.
+Configurar e gerenciar o arquivo [prometheus.yml](prometheus.yml) para que o Prometheus colete dados de telemetria da máquina do backend e do banco de dados a cada 15 segundos.
 
 ### 📈 5. Criação do Painel Visual no Grafana
 Após iniciar o contêiner do Grafana (porta `3001`), você deve acessar a interface web e criar um Dashboard de Monitoramento contendo gráficos dinâmicos:
@@ -34,7 +34,7 @@ Após iniciar o contêiner do Grafana (porta `3001`), você deve acessar a inter
 Garantir que os Dashboards criados no Grafana sejam persistidos no volume Docker `grafana_data` para que o professor e o grupo consigam visualizá-los imediatamente sem precisar reconfigurar as telas do Grafana do zero.
 
 ### 🤝 7. Apresentação do Bônus de Monitoramento
-Liderar a explicação da seção de Observabilidade no slide e demonstrar ao vivo para o professor o painel do Grafana se mexendo em tempo real enquanto o PO (Braga) navega pela aplicação e faz requisições.
+Liderar a explicação da seção de Observabilidade no slide e demonstrar ao vivo para o professor o painel do Grafana se mexendo em tempo real enquanto o PO (Brayan) navega pela aplicação e faz requisições.
 
 ---
 
