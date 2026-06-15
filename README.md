@@ -1,4 +1,4 @@
-# 👥 Coordenação Geral - Equipe Análise (Trabalho 1)
+# 👥 Coordenação Geral - Equipe Análise
 
 Olá, equipe! Este é o ponto central de coordenação para o **Trabalho 1 (Implementação Técnica)**. Aqui organizamos as tarefas de infraestrutura, banco de dados e backend para a nossa aplicação **UP Espaço**.
 
