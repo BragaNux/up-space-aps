@@ -1,6 +1,6 @@
 # 📊 Plano de Atividades: Kenedi (Database & Observability)
 
-Olá, Kenedi! Como desenvolvedor responsável pelo **Banco de Dados (PostgreSQL) & Observabilidade (Prometheus + Grafana)** do projeto acadêmico **UP Espaço**, seu principal objetivo será estruturar o armazenamento de dados e a infraestrutura de monitoramento, essencial para garantirmos o ponto extra bônus do projeto!
+Como desenvolvedor responsável pelo **Banco de Dados (PostgreSQL) & Observabilidade (Prometheus + Grafana)** do projeto acadêmico **UP Espaço**, seu principal objetivo será estruturar o armazenamento de dados e a infraestrutura de monitoramento, essencial para garantirmos o ponto extra bônus do projeto!
 
 Abaixo estão listadas as suas **7 Responsabilidades Clínicas & Técnicas** na equipe:
 
