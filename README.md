@@ -10,7 +10,7 @@ Fala, galera! Este é o nosso espaço para organizar a parte técnica do nosso p
 ## ⚙️ Como vai funcionar?
 
 * **Divisão Inicial**: Fiz uma divisão de tarefas para balancear o trampo de cada um. 
-* **Troca de responsabilidades**: Essa divisão é só o pontapé inicial. **Se vocês preferirem trocar de papel ou ajustar as tarefas entre si, está super liberado!** Só peço que avisem a equipe e a mim (Brayan) antes para eu manter a documentação atualizada no repositório.
+* **Troca de responsabilidades**: Essa divisão é só o pontapé inicial. **Se vocês preferirem trocar de papel ou ajustar as tarefas entre si** Só peço que avisem a equipe e a mim (Brayan) antes para eu manter a documentação atualizada no repositório.
 
 ---
 
