@@ -36,7 +36,7 @@ func NewRouter(container *repositories.RepositoryContainer) http.Handler {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/api/student", studentHandler.GetStudent).Methods(http.MethodGet)
-	router.HandleFunc("/api/student/presence", studentHandler.UpdatePresence).Methods(http.MethodPost)
+	router.HandleFunc("/api/student/presence", studentHandler.UpdatePresence).Methods(http.MethodPatch)
 	router.HandleFunc("/api/timeline", timelineHandler.List).Methods(http.MethodGet)
 	router.HandleFunc("/api/posts", postsHandler.List).Methods(http.MethodGet)
 	router.HandleFunc("/api/posts", postsHandler.Create).Methods(http.MethodPost)
@@ -45,6 +45,9 @@ func NewRouter(container *repositories.RepositoryContainer) http.Handler {
 	router.HandleFunc("/api/events", eventHandler.List).Methods(http.MethodGet)
 	router.HandleFunc("/api/events/{id:[0-9]+}/rsvp", eventHandler.RSVP).Methods(http.MethodPost)
 	router.Handle("/metrics", middleware.MetricsHandler()).Methods(http.MethodGet)
+
+	// register simple Swagger UI + JSON
+	RegisterSwagger(router)
 
 	return router
 }

@@ -144,6 +144,33 @@ DATABASE_URL=postgres://postgres:postgres@db:5432/up_espaco?sslmode=disable
 
 ---
 
+## Swagger (documentação)
+
+Adicionado um endpoint simples de documentação OpenAPI/Swagger UI.
+
+- UI: `http://localhost:8000/swagger`
+- JSON OpenAPI: `http://localhost:8000/swagger.json`
+
+O arquivo `docs/swagger.json` contém uma especificação mínima e foi montado no container via volume (`./docs:/app/docs`) no `docker-compose.yml`. Isso permite editar `docs/swagger.json` localmente sem rebuildar a imagem — basta recriar o serviço:
+
+```bash
+docker compose up -d --force-recreate backend
+```
+
+Observação: o Swagger UI carrega a biblioteca via CDN, então é necessário acesso à internet para a interface.
+
+### Nota sobre o endpoint de presença
+
+O endpoint `POST /api/student/presence` foi alterado para `PATCH /api/student/presence` e espera um JSON com o schema `PresenceRequest`:
+
+```json
+{ "status": "present|absent|..." }
+```
+
+A resposta é `200 OK` com um corpo `{"status":"updated"}` em caso de sucesso.
+
+---
+
 Se quiser, eu posso:
 
 - Automatizar a aplicação das migrations na inicialização do container (ex.: entrypoint script);

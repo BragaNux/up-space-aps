@@ -25,6 +25,8 @@ services:
       DATABASE_URL: postgres://postgres:postgres@db:5432/up_espaco?sslmode=disable
     ports:
       - '8000:8000'
+    volumes:
+      - ./docs:/app/docs
     command: ["/app/backend"]
 
 volumes:
