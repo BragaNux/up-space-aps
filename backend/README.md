@@ -158,21 +158,3 @@ docker compose up -d --force-recreate backend
 ```
 
 Observação: o Swagger UI carrega a biblioteca via CDN, então é necessário acesso à internet para a interface.
-
-### Nota sobre o endpoint de presença
-
-O endpoint `POST /api/student/presence` foi alterado para `PATCH /api/student/presence` e espera um JSON com o schema `PresenceRequest`:
-
-```json
-{ "status": "present|absent|..." }
-```
-
-A resposta é `200 OK` com um corpo `{"status":"updated"}` em caso de sucesso.
-
----
-
-Se quiser, eu posso:
-
-- Automatizar a aplicação das migrations na inicialização do container (ex.: entrypoint script);
-- Adicionar um `Makefile` com comandos úteis (`make up`, `make down`, `make migrate`);
-- Preparar um script `dev` que restaura o bind-mount para hot-reload.
