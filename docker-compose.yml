@@ -8,8 +8,8 @@ services:
       POSTGRES_DB: up_espaco
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./internal/adapters/database/init:/docker-entrypoint-initdb.d:ro
-      - ./internal/adapters/database/migrations:/migrations:ro
+      - ./backend/internal/adapters/database/init:/docker-entrypoint-initdb.d:ro
+      - ./backend/internal/adapters/database/migrations:/migrations:ro
     ports:
       - '5432:5432'
     healthcheck:
@@ -20,7 +20,7 @@ services:
 
   backend:
     build:
-      context: .
+      context: ./backend
       dockerfile: Dockerfile
     restart: unless-stopped
     depends_on:
@@ -32,7 +32,7 @@ services:
     ports:
       - '8000:8000'
     volumes:
-      - ./docs:/app/docs
+      - ./backend/docs:/app/docs
     command: ["/app/backend"]
 
   postgres-exporter:
@@ -69,7 +69,7 @@ services:
     ports:
       - '9090:9090'
     volumes:
-      - ../prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - prometheus_data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
@@ -88,7 +88,7 @@ services:
       - '3001:3000'
     volumes:
       - grafana_data:/var/lib/grafana
-      - ../grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
 
 volumes:
   postgres_data:

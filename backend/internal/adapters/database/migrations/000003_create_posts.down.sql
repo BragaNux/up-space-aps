@@ -1,1 +1,2 @@
+DROP VIEW IF EXISTS activity_posts;
 DROP TABLE IF EXISTS posts;
