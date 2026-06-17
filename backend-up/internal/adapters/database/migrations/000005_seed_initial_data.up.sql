@@ -1,0 +1,3 @@
+-- Intentionally left blank: this project does not ship demo/mock data.
+-- Students, posts, timeline events and school events are created
+-- through the application itself by real accounts (profissional/responsavel).

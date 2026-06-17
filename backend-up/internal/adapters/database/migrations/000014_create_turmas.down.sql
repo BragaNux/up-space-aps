@@ -1,0 +1,3 @@
+ALTER TABLE students DROP COLUMN IF EXISTS turma_id;
+ALTER TABLE students DROP COLUMN IF EXISTS teacher_user_id;
+DROP TABLE IF EXISTS turmas;

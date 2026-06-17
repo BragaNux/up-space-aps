@@ -1,0 +1,3 @@
+-- Intentionally left blank: this project does not ship demo/mock data.
+-- Guardians, comments, announcements and milestones are created
+-- through the application itself by real accounts (profissional/responsavel).

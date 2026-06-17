@@ -1,0 +1,1 @@
+-- Intentionally left blank (see 000005_seed_initial_data.up.sql).

@@ -1,0 +1,21 @@
+# Node / frontend
+frontend-up/node_modules/
+frontend-up/dist/
+
+# Go
+backend-up/backend
+backend-up/*.exe
+
+# Editor / tooling
+.claude/
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.local
+*.env
+
+# OS
+.DS_Store
+Thumbs.db

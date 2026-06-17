@@ -1,0 +1,11 @@
+DELETE FROM comments WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8, 9) OR id >= 100;
+DELETE FROM attendance WHERE student_id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) OR student_id >= 100;
+DELETE FROM announcements WHERE id IN (1, 2);
+DELETE FROM events WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8);
+DELETE FROM milestones WHERE id IN (1, 2, 3, 4);
+DELETE FROM timeline_events WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
+DELETE FROM posts WHERE id IN (1, 2, 3, 4) OR id >= 100;
+DELETE FROM student_guardians WHERE id IN (1, 2, 3, 4, 5, 6) OR id >= 100;
+DELETE FROM students WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) OR id >= 100;
+DELETE FROM users WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) OR id >= 100;
+DELETE FROM turmas WHERE id IN (1, 2, 3);
